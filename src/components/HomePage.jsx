@@ -1,4 +1,5 @@
 import React, { useCallback, useEffect, useMemo, useReducer, useRef, useState } from 'react'
+import ToDoList from './ToDoList'
 
 const HomePage = () => {
   const [name, setName] = useState('')
@@ -97,6 +98,10 @@ const HomePage = () => {
       <div>
          Memoised Counter: { count }
         <button onClick={btnIncrement}>Btn Counter</button>
+      </div>
+
+      <div>
+        <ToDoList/>
       </div>
     </div>
 
